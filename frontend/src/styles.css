@@ -1,0 +1,28 @@
+:root{--bg:#fcf5e8;--ink:#14302b;--mut:#6b7c76;--card:#fff;--ln:#e8dfcc;--pr:#e55a2f;--ok:#1f5a43;--warn:#f2b632;--bad:#e55a2f;--sf:#eef5ee}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Inter,system-ui,sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;margin:0}h1 em,h2 em{color:var(--pr)}h3{font-size:16px;margin:0 0 10px}
+header{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:16px 20px;border-bottom:1px solid var(--ln)}
+header p{margin:2px 0 0;color:var(--mut)}.layout{display:grid;grid-template-columns:minmax(300px,380px) 1fr;gap:18px;padding:18px 20px;max-width:1280px;margin:0 auto}
+@media(max-width:860px){.layout{grid-template-columns:1fr}}
+.panel{background:var(--card);border:1px solid var(--ln);border-radius:16px;padding:14px 16px;margin-bottom:14px}
+label.f{display:block;font-size:12.5px;color:var(--mut);margin:8px 0 3px}
+input[type=number],input[type=text],select,textarea{width:100%;font:inherit;padding:7px 10px;border:1px solid var(--ln);border-radius:10px;background:#fff;color:var(--ink)}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.row>*{flex:1;min-width:70px}.ck{display:flex;gap:8px;align-items:flex-start;margin:8px 0;font-size:14px}.ck input{margin-top:4px}
+.btn{font:inherit;font-weight:600;cursor:pointer;border:1px solid var(--ln);background:#fff;color:var(--ink);border-radius:999px;padding:7px 14px}.btn.p{background:var(--pr);border-color:var(--pr);color:#fff}.btn.s{padding:4px 10px}
+.btn:disabled{opacity:.5;cursor:default}
+.mx{border-bottom:1px dashed var(--ln);padding-bottom:10px;margin-bottom:10px}.chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
+.chip{font:inherit;font-size:12px;cursor:pointer;border:1px solid var(--ln);background:var(--bg);color:var(--mut);border-radius:999px;padding:3px 10px}.chip.on{background:var(--bad);border-color:var(--bad);color:#fff;font-weight:600}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}.tabs button{font:inherit;font-weight:600;cursor:pointer;border:1px solid var(--ln);background:#fff;border-radius:999px;padding:7px 14px;color:var(--mut)}.tabs button.on{background:var(--ink);border-color:var(--ink);color:#fff}
+.mt{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}.mt>div{background:var(--card);border:1px solid var(--ln);border-radius:14px;padding:12px}.mt b{display:block;font:700 22px Fraunces,serif}.mt span{font-size:12px;color:var(--mut)}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:8px 6px;border-bottom:1px solid var(--ln);text-align:left;vertical-align:top}th{font-size:12px;color:var(--mut);font-weight:600}.n{text-align:right}
+.tbw{overflow-x:auto;background:var(--card);border:1px solid var(--ln);border-radius:14px;padding:4px 10px;margin-bottom:12px}
+.ig{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:10px}.ci{background:var(--card);border:1px solid var(--ln);border-radius:16px;padding:12px;text-align:center}.ci .e{font-size:40px}.ci .q{font:700 20px Fraunces,serif}
+.tag{font-size:10px;background:var(--warn);border-radius:6px;padding:1px 6px;margin-left:6px;font-weight:700}
+.sfe{background:var(--sf);border:1px solid var(--ln);border-left:4px solid var(--ok);border-radius:0 14px 14px 0;padding:11px 14px;margin-bottom:14px;font-size:13.5px}.sfe .note{margin-top:4px}
+.note{color:var(--mut);font-size:12.5px}.al{background:#fde9e1;border:1px solid #f3c2b0;border-radius:12px;padding:10px 14px;margin-bottom:12px}
+.bar{height:7px;background:var(--ln);border-radius:5px;overflow:hidden;margin-top:4px}.bar i{display:block;height:100%}
+.pill{display:inline-block;padding:2px 10px;border-radius:999px;font-size:12px;font-weight:700;color:#fff}.p0{background:var(--ok)}.p1{background:var(--warn);color:var(--ink)}.p2{background:var(--bad)}
+.ev{background:var(--card);border:1px solid var(--ln);border-radius:14px;padding:12px 14px;margin-bottom:12px}.ev ul{margin:6px 0 0;padding-left:18px}
+.exl{max-height:190px;overflow:auto;border:1px solid var(--ln);border-radius:10px;padding:4px 10px}
+@media print{header .row,.layout>aside,.tabs,.btn{display:none!important}.layout{display:block}}
+.row>.btn{flex:0 0 auto}
